@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="calculate.js"></script>
+  <title>cal</title>
+</head>
+<body>
+  <div class="spliter">SPLI <br style="display: block;">TIER</div>
+
+  <div class="box">
+  <div class="left">
+    <p style="font-family: monospace; font-size: 18px;">Bill</p>
+    <input type="text" placeholder="$0" id="bill">
+    <p style="font-family: monospace; font-size: 18px;">Select Tip %</p> <br>
+<div class="mob">
+  <div class="newl">
+    <input type="radio" id="5" name="bttn" value=".05" style="display: none;" class="check"/>
+    <label  for="5">5%</label>
+    <input type="radio" id="10" name="bttn" value=".1" style="display: none;" class="check"/>
+    <label  for="10">10%</label>
+    <input type="radio" id="15" name="bttn" value=".15" style="display: none;" class="check"/>
+    <label  for="15">15%</label>
+     <br> <br> <br> <br> 
+  </div>
+ 
+  <div class="newr">
+
+    <input type="radio" id="20" name="bttn" value=".2" style="display: none;" class="check"/>
+    <label  for="20">20%</label>
+    <input type="radio" id="25" name="bttn" value=".25" style="display: none;" class="check"/>
+    <label  for="25">25%</label>
+  
+    <input type="number" placeholder="custom" id="cutm">
+  </div>
+
+</div>
+
+    <p style="font-family: monospace; font-size: 20px;">Number of people</p>
+    <input type="number" placeholder="$0" id="count">
+
+  </div>
+  <div class="right">
+    <div class="amount">
+      <p style="font-size: large;   font-family: monospace;">Tip amount <br> /person</p>
+      <p style="margin-left: 40%; margin-top: 8%; color: hsl(172, 67%, 45%); font-size: large; text-align: center;" id="tipamt">$0.00</p>
+    </div>
+    <div class="tot">
+      <p style="font-size: large;   font-family: monospace;">Total <br> /person</p>
+      <p style="margin-left: 50%; margin-top: 8%; color:hsl(172, 67%, 45%); font-size: large; text-align: center;" id="totalperson">$0.00</p>
+    </div>
+
+    <button type="button"  class="reset" id="calculate" onclick="calculateTip()">CALCULATE</button>
+    <button type="button" class="reset" onclick="normal()">RESET</button>
+
+  </div>
+  </div>
+
+</body>
+</html>
